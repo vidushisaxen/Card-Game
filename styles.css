@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.box img{
+    height: 150px;
+    width: 150px;
+}
