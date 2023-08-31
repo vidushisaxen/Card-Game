@@ -2,9 +2,15 @@
     margin: 0;
     padding: 0;
 }
+.box.hidden{
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Card_spade.svg/1200px-Card_spade.svg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .box{
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     border: 2px solid black;
     margin: 40px;
     padding: 20px;
@@ -21,3 +27,13 @@
     height: 150px;
     width: 150px;
 }
+/* .result{
+    /* background-color: rgba(141, 141, 141, 0.1); */
+    /* background-color: red;
+   height: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -500px;
+    left: 250px;
+    color: black;
+     */
