@@ -134,8 +134,9 @@
 
 // Sum Nested Arrays: Write a function that takes an array of arrays of numbers and returns the sum of all the numbers in all the arrays.
 // const arr=[[1,2],[3,4],[3,7]]
-// let sum=0;
+
 // function arrsum(arr){
+//     let sum=0;
 //     for(let i=0;i<arr.length;i++){
 //       if(typeof arr[i]=='number')
 //       sum+=arr[i];
@@ -148,7 +149,23 @@
 // console.log(output);
 
 // Group by Property: Given an array of objects, group them by a specific property and return an object where keys are the property values and values are arrays of objects with that property value.
-
+// const arr = [
+//         {
+//              title:"Atomic habits",
+//              author:"James Clear",
+//              pages:120
+//          },
+//          {
+//              title:"Alchemist",
+//              author:"Paul Coelho",
+//              pages:250
+//          },
+//          {
+//              title:"Java Programming",
+//              author:"Sumita Arora",
+//              pages:500
+//          }
+//      ]
 
 
 // Remove Duplicates: Implement a function that takes an array and returns a new array with all duplicate values removed.
@@ -253,3 +270,107 @@
 // }
 // add();
 // console.log(sak);
+
+// Write a function that takes in an object and returns an array of all the keys in the object.
+//  const person ={
+//              name:"Vidushi",
+//                age:21
+//          }
+//          function fun(person){
+//             return (Object.keys(person));
+//          }
+//          const result = fun(person);
+//        console.log(result);
+
+//  Write a function that takes in an array of objects and a property name, and returns an array of all the values of that property across all the objects.
+// const arr = [
+//          {
+//              title:"Atomic habits",
+//              author:"James Clear",
+//              pages:120
+//          },
+//          {
+//              title:"Alchemist",
+//              author:"Paul Coelho",
+//              pages:250
+//          },
+//         {
+//             title:"Java Programming",
+//             author:"Sumita Arora",
+//             pages:500
+//         }
+//  ]
+//  let result = arr.map((a)=> a.title)
+//  console.log(result);
+
+// Write a function that takes in an array of objects and a property name, and returns an object where the keys are the values of that property, and the values are arrays of all the objects with that value for the property.
+
+// const arr = [
+//               {
+//                   title:"Atomic habits",
+//                   author:"James Clear",
+//                   pages:120
+//               },
+//               {
+//                   title:"Alchemist",
+//                   author:"Paul Coelho",
+//                   pages:250
+//               },
+//              {
+//                  title:"Java Programming",
+//                  author:"Sumita Arora",
+//                  pages:500
+//              }
+//       ]
+//       function vid(arr,pages){
+      
+//       }
+
+
+
+
+// You are given an array of objects representing products in an online store. Each product has properties like name, price, and category. Your task is to perform a series of transformations using array methods to achieve the following:
+// Filter out products that are in the "Electronics" category.
+// Double the price of the remaining products.
+// Calculate the total price of all products after doubling their prices.
+
+// const arr = [
+//     {
+//         neme:"Philips Dryer",
+//         price:1000,
+//         category:"Electronics"
+//     },
+//     {
+//         name:"COrnflakes",
+//         price:150,
+//         category:"Grocery"
+//     },
+//     {
+//         name:"Panasonic Telivision",
+//         price:50000,
+//         category:"Electronics"
+//     },
+//     {
+//         name:"Iron",
+//         price:300,
+//         category:"Electronics"
+//     },
+//     {
+//         name:"Jam",
+//         price:100,
+//         category:"Grocery"
+//     }
+// ]
+// const electronicfilter = arr.filter((x)=>x.category=="Electronics");
+// console.log(electronicfilter);
+
+// const doubleprice = electronicfilter.map((x)=>({
+//     price: x.price*2
+// }));
+// console.log(doubleprice);
+// const total = doubleprice.reduce((acc,curr)=>{
+   
+//     acc+=curr.price;
+//     return acc;
+// },0)
+// console.log(total);
